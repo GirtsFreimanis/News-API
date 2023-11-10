@@ -40,7 +40,8 @@ class Api
                 $article->description,
                 $article->content,
                 $article->urlToImage,
-                $article->publishedAt
+                $article->publishedAt,
+                $article->url
             );
 
         return $articles;
@@ -69,7 +70,7 @@ class Api
             return [];
         }
         $data = json_decode((string)$response->getBody());
-        
+
         //dd($data);
         foreach ($data->articles as $article)
             $articles[] = new Article(
@@ -79,7 +80,8 @@ class Api
                 $article->description,
                 $article->content,
                 $article->urlToImage,
-                $article->publishedAt
+                $article->publishedAt,
+                $article->url
             );
 
         return $articles;

@@ -3,14 +3,17 @@
         <form action="/search" method="get">
             <label>
                 <select name="country" id="country">
-                    <option value="" disabled selected></option>
+                    <option value="" disabled selected>country</option>
                     <option value="us">USA</option>
                     <option value="lv">Latvia</option>
                     <option value="ca">Canada</option>
                 </select>
             </label>
+            <label for="topic">Search for topic:</label>
             <input name="topic" type="text" placeholder="topic">
+            <label for="from">from:</label>
             <input type="date" id="from" name="from">
+            <label for="to">to:</label>
             <input type="date" id="to" name="to">
             <input type="submit" name="submit" value="submit">
         </form>

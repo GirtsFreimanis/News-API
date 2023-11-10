@@ -15,6 +15,7 @@ class Article
     private ?string $content;
     private string $imgUrl;
     private Carbon $publishedAt;
+    private string $url;
 
     public function __construct(
         string  $title,
@@ -23,7 +24,9 @@ class Article
         ?string $description,
         ?string $content,
         ?string $imgUrl,
-        string  $publishedAt
+        string  $publishedAt,
+        ?string $url
+
     )
     {
         $this->title = $title;
@@ -38,6 +41,7 @@ class Article
             $this->imgUrl = $imgUrl;
         }
         $this->publishedAt = Carbon::parse($publishedAt);
+        $this->url = $url;
     }
 
     public function getTitle(): string
@@ -73,6 +77,11 @@ class Article
     public function getPublishedAt(): Carbon
     {
         return $this->publishedAt;
+    }
+
+    public function getUrl(): string
+    {
+        return $this->url;
     }
 
 }
