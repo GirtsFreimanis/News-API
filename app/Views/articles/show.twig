@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello world</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{% include "partials/top.twig" %}
+{% include "partials/search.twig" %}
+<div id="content">
+    <img id="showImg" src="{{ article.imgUrl }}">
+    <h1>{{ article.title }}</h1>
+    <br>
+    <p>{{ article.publishedAt }}</p>
+    <br>
+    <p>{{ article.description }}</p>
+    <br>
+    <p>{{ article.content }}</p>
+</div>
+
+</body>
+</html>

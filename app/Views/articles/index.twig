@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello world</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{% include "partials/top.twig" %}
+{% include "partials/search.twig" %}
+<div id="articles">
+    {% for article in articles %}
+
+        <div class="card">
+            <a target="_blank" href="/show/{{ loop.index-1 }}">
+                <img class="indexImg" src="{{ article.imgUrl }}"
+                     alt="/assets/360_F_562111583_AcmOoTH53BpjhEJZ1g9BzUejGbj8lMAQ.jpg"
+                     style="width:100%">
+                <div class="container">
+                    <h4 class="title">{{ article.title }}</h4>
+                    <p class="description">{{ article.description }}</p>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>

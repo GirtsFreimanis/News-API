@@ -1,0 +1,100 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #6E6E6E;
+    height: 100%;
+}
+
+#top {
+    width: 100%;
+    color: red;
+    background-color: #7DA0B1;
+    height: 2lh;
+}
+
+#title {
+    margin-top: 0;
+}
+
+#title {
+    color: black;
+}
+
+#search {
+    background-color: #BBBBBB;
+    horiz-align: center;
+}
+
+#forms {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#content {
+    display: block;
+    width: 50%;
+    height: 200%;
+    vertical-align: center;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+}
+
+#showImg {
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+#articles {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    min-width: 20%;
+    width: 195px;
+    margin: 15px 15px 15px auto;
+    outline: solid 1px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+}
+
+.indexImg {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.title {
+    margin: 5px;
+}
+
+.description {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
