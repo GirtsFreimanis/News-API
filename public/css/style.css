@@ -10,10 +10,12 @@ body, html {
     color: red;
     background-color: #7DA0B1;
     height: 2lh;
+    padding: 10px;
 }
 
 #title {
     margin-top: 0;
+    font-family: 'Newsreader', serif;
 }
 
 #title {
@@ -92,6 +94,7 @@ body, html {
 
 .description {
     padding: 5px;
+    color: black;
 }
 
 a {

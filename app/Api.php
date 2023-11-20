@@ -12,7 +12,6 @@ use GuzzleHttp\Exception\GuzzleException;
 class Api
 {
     private Client $client;
-
     private const API_URL = "https://newsapi.org/v2/";
     private string $apiKey;
 
@@ -43,7 +42,6 @@ class Api
                 $article->publishedAt,
                 $article->url
             );
-
         return $articles;
     }
 
